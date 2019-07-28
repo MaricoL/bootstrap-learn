@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+
+        <h1>单一按钮的下拉菜单:</h1>
+        <div class="dropdown">
+            <!-- <div class="btn-group"> -->
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown</button>
+            <!-- <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown</a> -->
+
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">aaa</a>
+                <a href="#" class="dropdown-item">bbb</a>
+                <a href="#" class="dropdown-item">ccc</a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <h1>分裂式按钮下拉菜单:</h1>
+        <div class="btn-group dropup">
+            <button class="btn btn-success" data-toggle="dropdown">Dropdown</button>
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">AAA</a>
+                <a href="#" class="dropdown-item">BBB</a>
+                <a href="#" class="dropdown-item">CCC</a>
+            </div>
+        </div>
+        <hr/>
+
+        <h1>V4中菜单不仅仅是a标签，也可以是button和span</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown</button>
+            <div class="dropdown-menu show">
+                <a href="#" class="dropdown-item">aaa</a>
+                <button class="dropdown-item">bbb</button>
+                <span class="dropdown-item-text">ccc</span>
+            </div>
+        </div>
+        <hr/>
+
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+        <h1>有效&不可用:</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item active">aaa</a>
+                <button class="dropdown-item">bbb</button>
+                <span class="dropdown-item-text">ccc</span>
+            </div>
+        </div>
+        <hr/>
+
+        <h1>对齐:</h1>
+
+        <div class="btn-group">
+            <button class="btn btn-success" data-toggle="dropdown">Dropdown</button>
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+
+            <div class="dropdown-menu dropdown-menu-left">
+                <a href="#" class="dropdown-item">AAA</a>
+                <a href="#" class="dropdown-item">BBB</a>
+                <a href="#" class="dropdown-item">CCC</a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <h1>子标题与分割线：</h1>
+        <div class="btn-group">
+            <button class="btn btn-success" data-toggle="dropdown">Dropdown</button>
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+
+            <div class="dropdown-menu dropdown-menu-left">
+                <a href="#" class="dropdown-item">AAA</a>
+                <a href="#" class="dropdown-item">BBB</a>
+                <h6 class="dropdown-header">子标题</h6>
+                <div class="dropdown-divider">分割线</div>
+                <a href="#" class="dropdown-item">CCC</a>
+            </div>
+        </div>
+        <hr/>
+
+        <h1>文本:</h1>
+        <div class="btn-group">
+            <button class="btn btn-success" data-toggle="dropdown">Dropdown</button>
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+
+            <div class="dropdown-menu p-4 text-muted" style="width:200px;">
+                <p>一些示例文本在下拉菜单中自由流动。</p>
+                <p>这是更多示例文本。</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <h1>表单:</h1>
+        <div class="btn-group">
+            <button class="btn btn-success" data-toggle="dropdown">Dropdown</button>
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+
+            <div class="dropdown-menu p-3" style="width:240px;">
+                <form action="">
+                    <div class="form-group">
+                        <label for="">邮箱：</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">密码：</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <button class="btn btn-primary">登录</button>
+                </form>
+            </div>
+            <!-- <form action="" class="dropdown-menu p-3" style="width:240px;">
+                <div class="form-group">
+                    <label for="">邮箱：</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">密码：</label>
+                    <input type="password" class="form-control">
+                </div>
+                <button class="btn btn-primary">登录</button>
+            </form> -->
+        </div>
+        <hr/>
+
+        <h1>下拉选项 data-offset:</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-offset="10,20">Dropdown</button>
+
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">aaa</a>
+                <a href="#" class="dropdown-item">bbb</a>
+                <a href="#" class="dropdown-item">ccc</a>
+            </div>
+        </div>
+        <hr/>
+
+        <h1>下拉选项 data-reference（在分裂式使用）：</h1>
+        <div class="btn-group dropup">
+            <button class="btn btn-success" data-toggle="dropdown">Dropdown</button>
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" data-reference="parent"></button>
+
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">AAA</a>
+                <a href="#" class="dropdown-item">BBB</a>
+                <a href="#" class="dropdown-item">CCC</a>
+            </div>
+        </div>
+        <hr/>
+
+        <h1>JavaScript行为:</h1>
+        <div class="dropdown" id="myDropDown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown</button>
+
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">aaa</a>
+                <a href="#" class="dropdown-item">bbb</a>
+                <a href="#" class="dropdown-item">ccc</a>
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+    </div>
+
+
+
+<script src="../js/jquery.min.js"></script>
+<!--<script src="../js/bootstrap.js"></script>-->
+<!-- 内嵌了propper.js-->
+<script src="../js/bootstrap.bundle.js"></script>
+
+<script>
+    $("#myDropDown").on("show.bs.dropdown",function(){
+        alert("show");
+    }).on("shown.bs.dropdown",function () {
+        alert("shown");
+    }).on("hide.bs.dropdown",function () {
+        alert("hide");
+    }).on("hidden.bs.dropdown",function () {
+        alert("hidden");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>定位：</h1>
+        <div class="position-relative border border-danger" style="width: 400px;height: 400px;">
+            <div class="position-absolute bg-primary" style="width: 100px;height: 100px;right: 0;bottom: 0;"></div>
+        </div>
+    </div>
+
+    <hr/>
+
+    <h1>固定在顶（低）部：</h1>
+    <!--
+        fixed-top：只固定在页面最上方，会覆盖上方的内容，并且还要在body标签中定义padding值
+        sticky-top：在header上方的内容也可以显示
+    -->
+    <header class="bg-danger sticky-top" style="height: 50px;">
+        <div class="container">
+            header
+        </div>
+    </header>
+    <div class="container">
+        1<br/>2<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>
+        3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>
+        3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>
+        3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>3<br/>
+    </div>
+    <footer class="bg-danger fixed-bottom" style="height: 30px;">
+        <div class="container">
+            footer
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

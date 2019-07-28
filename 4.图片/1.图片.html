@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>响应式图片&缩略图处理:</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="../images/lg.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-4">
+                <img src="../images/sm.jpg" alt="" class="w-100 img-fluid">
+            </div>
+            <div class="col-lg-4">
+                <img src="../images/lg.jpg" alt="" class="img-fluid img-thumbnail p-2">
+            </div>
+        </div>
+
+
+        <hr/>
+
+        <h1>图像对齐处理:</h1>
+        <div class="clearfix" style="border: 1px solid #F00;">
+            <img src="../images/sm.jpg" alt="" class="rounded float-left">
+            <img src="../images/sm2.jpg" alt="" class="rounded float-right">
+        </div>
+
+
+        <div style="border: 1px solid #F00;">
+            <img src="../images/sm.jpg" alt="" class="rounded d-block mx-auto">
+        </div>
+
+        <div class="text-center" style="border: 1px solid #F00;">
+            <img src="../images/sm.jpg" alt="" class="rounded">
+        </div>
+
+        <hr/>
+
+        <h1>Html 5 标准之Picture元素:</h1>
+        <picture>
+            <source srcset="../images/lg.jpg"  media="(min-width: 992px)" >
+            <source srcset="../images/md.jpg"  media="(min-width: 576px)">
+            <img src="../images/sm.jpg" alt="">
+        </picture>
+
+        <hr/>
+
+        <h1>图文框:</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="../images/lg.jpg" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="../images/md.jpg" class="figure-img img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure class="figure d-block">
+                    <img src="../images/sm.jpg" class="figure-img w-100 img-fluid rounded" alt="">
+                    <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <hr/>
+
+
+
+
+
+    </div>
+
+</body>
+</html>

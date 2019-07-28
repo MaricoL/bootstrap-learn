@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>使用data-dismiss实现：</h1>
+        <div class="mt-3 alert alert-danger alert-dismissible fade show" >
+            <strong>登录失败!</strong> 您的用户名或密码错误.
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
+
+        <hr/>
+
+        <h1>使用JS实现：</h1>
+        <div class="mt-3 alert alert-danger alert-dismissible fade show" id="myAlert">
+            <strong>登录失败!</strong> 您的用户名或密码错误.
+            <button type="button" class="close" id="btn">&times;</button>
+        </div>
+
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+        $("#btn").click(function () {
+            // 关闭警告框
+            $("#myAlert").alert('close');
+            // 使关闭警告框失效
+            // $("#myAlert").alert('close');
+        });
+
+        // 关闭之前触发事件
+        // 关闭之后触发事件
+        $("#myAlert").on("close.bs.alert",function () {
+            alert("close。。。");
+        }).on("closed.bs.alert",function(){
+            alert("closed");
+        });
+
+    </script>
+</body>
+</html>
