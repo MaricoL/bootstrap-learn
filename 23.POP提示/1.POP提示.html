@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>示例：</h1>
+        <button class="btn btn-primary" data-toggle="popover" title="标题！" data-content="内容内容内容。" data-placement="right">button</button>
+
+
+        <hr/>
+
+        <h1>自定义HTML:</h1>
+        <button class="btn btn-primary" data-toggle="popover" title="<em>标题！</em>" data-content="<b>内容</b>内容内容。" data-html="true">button</button>
+        <hr/>
+
+
+        <h1>禁用元素:</h1>
+
+        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="标题内容123！">
+         <button class="btn btn-primary" style="pointer-events: none;"  disabled>button</button>
+        </span>
+
+        <hr/>
+
+        <h1>在下次点击时收回：</h1>
+        <a tabindex="0" class="btn btn-primary" data-toggle="popover" title="标题！" data-content="内容内容内容。" data-trigger="focus">button</a>
+        <hr/>
+    </div>
+
+
+
+
+
+<script src="../js/jquery.min.js"></script>
+<!-- 内嵌了propper.js-->
+<script src="../js/bootstrap.bundle.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+</body>
+</html>

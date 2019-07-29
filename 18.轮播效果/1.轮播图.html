@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>示例：</h1>
+        <div class="carousel slide" data-ride="carousel" data-interval="1000" data-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <h1>带控制器的效果:</h1>
+
+        <div class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false" id="myCarousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <hr/>
+
+        <h1>包含姿态指示器:</h1>
+
+        <div class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false" id="myCarouse2">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarouse2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarouse2" data-slide-to="1"></li>
+                <li data-target="#myCarouse2" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarouse2" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse2" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <br/>
+
+        <h1>包含字幕的轮播:</h1>
+
+        <div class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false" id="myCarouse3">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第一张图</h5>
+                        <p>第一张图描述！第一张图描述！第一张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第二张图</h5>
+                        <p>第二张图描述！第二张图描述！第二张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第三张图</h5>
+                        <p>第三张图描述！第三张图描述！第三张图描述！</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarouse3" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse3" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <hr/>
+
+        <h1>交替变化:</h1>
+
+        <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-pause="false" id="myCarouse4">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第一张图</h5>
+                        <p>第一张图描述！第一张图描述！第一张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第二张图</h5>
+                        <p>第二张图描述！第二张图描述！第二张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第三张图</h5>
+                        <p>第三张图描述！第三张图描述！第三张图描述！</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarouse4" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse4" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <hr/>
+
+        <h1>单个间隔（第二张到第三章时间为3秒）</h1>
+
+        <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="1000" data-pause="false" id="myCarouse5">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第一张图</h5>
+                        <p>第一张图描述！第一张图描述！第一张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第二张图</h5>
+                        <p>第二张图描述！第二张图描述！第二张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第三张图</h5>
+                        <p>第三张图描述！第三张图描述！第三张图描述！</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarouse5" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse5" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <hr/>
+
+        <h1>键盘左右键操作：</h1>
+
+        <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="1000" data-keyboard="true" id="myCarouse6">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第一张图</h5>
+                        <p>第一张图描述！第一张图描述！第一张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第二张图</h5>
+                        <p>第二张图描述！第二张图描述！第二张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第三张图</h5>
+                        <p>第三张图描述！第三张图描述！第三张图描述！</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarouse6" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse6" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <hr/>
+
+        <h1>JavaScript方法、事件以及options属性:</h1>
+
+        <div class="carousel slide"  id="myCarouse7">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/slider/1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第一张图</h5>
+                        <p>第一张图描述！第一张图描述！第一张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第二张图</h5>
+                        <p>第二张图描述！第二张图描述！第二张图描述！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/slider/3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h5>第三张图</h5>
+                        <p>第三张图描述！第三张图描述！第三张图描述！</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarouse7" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse7" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <p>
+            <button id="btn1">播放</button>
+            <button id="btn2">暂停</button>
+            <button id="btn3">跳转</button>
+            <button id="btn4">上一个</button>
+            <button id="btn5">下一个</button>
+        </p>
+        <hr/>
+    </div>
+
+
+
+
+<script src="../js/jquery.min.js"></script>
+<!-- 内嵌了propper.js-->
+<script src="../js/bootstrap.bundle.js"></script>
+
+<script>
+
+    var myCarouse7 = $("#myCarouse7");
+    myCarouse7.carousel({
+        interval:1000
+    });
+
+    $("#btn1").click(function () {
+        myCarouse7.carousel("cycle");
+    });
+
+    $("#btn2").click(function () {
+        myCarouse7.carousel("pause");
+    });
+
+    $("#btn3").click(function () {
+        myCarouse7.carousel(2);
+    });
+
+    $("#btn4").click(function () {
+        myCarouse7.carousel("prev");
+    });
+
+    $("#btn5").click(function () {
+        myCarouse7.carousel("next");
+    });
+
+    myCarouse7.on("slide.bs.carousel", function (options) {
+        alert("slide");
+        console.log("slide", options);
+    }).on("slid.bs.carousel",function (options) {
+        alert("slid");
+        console.log("slid", options);
+    });
+
+</script>
+</body>
+</html>

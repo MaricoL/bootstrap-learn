@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="toast hide" id="myToast" data-delay="500" data-animation="true" data-autohide="true" style="position:fixed;top:50%;right:50%;">
+            <div class="toast-header">
+                <img src="../images/logo_sm.png" alt="" width="20" class="rounded mr-2">
+                <strong class="mr-auto">标题</strong>
+                <small>1分钟前</small>
+                <button class="close ml-2 mb-1" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+                您好! 这是一个Toasts弹出提示框.
+            </div>
+        </div>
+
+        <p>
+            <button id="btn1">显示</button>
+            <button id="btn2">隐藏</button>
+        </p>
+
+
+    </div>
+
+
+<script src="../js/jquery.min.js"></script>
+<!-- 内嵌了propper.js-->
+<script src="../js/bootstrap.bundle.js"></script>
+<script>
+    $('#btn1').click(function(){
+        $('#myToast').toast('show');
+    });
+
+    $('#btn2').click(function(){
+        $('#myToast').toast('hide');
+    });
+</script>
+</body>
+</html>
