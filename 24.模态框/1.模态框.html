@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>示例：</h1>
+        <div class="modal fade" tabindex="-1" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">标题！</h5>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>内容内容内容内容内容内容。</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button class="btn btn-primary">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Modal</button>
+
+
+        <hr/>
+
+        <h2>使用栅格:</h2>
+
+        <div class="modal fade" tabindex="-1" data-backdrop="static" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">标题！</h5>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4">姓名</div>
+                                <div class="col-sm-8">年龄</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button class="btn btn-primary">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Modal</button>
+
+        <hr/>
+
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <!-- 内嵌了propper.js-->
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

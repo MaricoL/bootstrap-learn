@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>示例：</h1>
+        <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="标题内容123！">button</button>
+        <hr/>
+
+
+        <h1>自定义HTML:</h1>
+        <button class="btn btn-primary" data-toggle="tooltip" data-html="true" title="<em>标题</em>内容123！">button</button>
+        <hr/>
+
+        <h1>禁用元素时：</h1>
+        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="标题内容123！">
+	        <button class="btn btn-primary" style="pointer-events: none;"  disabled>button</button>
+        </span>
+
+        <hr/>
+
+
+
+    </div>
+
+
+<script src="../js/jquery.min.js"></script>
+<!-- 内嵌了propper.js-->
+<script src="../js/bootstrap.bundle.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>
