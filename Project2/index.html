@@ -7,11 +7,14 @@
     <title>wztx</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+
+<body class="position-relative wow fadeIn slower" data-spy="scroll" data-target="#myNavBarContent" >
+<div id="home"></div>
 <!--导航-->
-<nav class="navbar navbar-expand-md navbar-light bg-light border-bottom" id="myNavBar">
+<nav class="navbar navbar-expand-md navbar-light bg-light border-bottom fixed-top" id="myNavBar">
     <div class="container">
         <a class="navbar-brand" href="#">WZTX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBarContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +38,7 @@
                     <a class="nav-link" href="#intro">公司简介</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#concat">联系我们</a>
+                    <a class="nav-link" href="#contact">联系我们</a>
                 </li>
             </ul>
         </div>
@@ -44,7 +47,7 @@
 
 <!--推荐-->
 <section id="recommend" class="py-5 bg-dark text-white text-center">
-    <div class="container">
+    <div class="container wow fadeInUp">
         <h1 class="mb-3">外滋内养 绝代双胶</h1>
         <p>外滋润：1.4多层玻尿酸；2.明星成分Tiracle；3.拍一拍，看得见的渗透。</p>
         <p>内养颜：1.10秒快速破壁；2.食品级材料triran；3.摇一摇，喝的到的细腻。</p>
@@ -53,15 +56,15 @@
 </section>
 
 <!--产品-->
-<section class="mt-5 pt-3">
+<section id="feature" class="mt-5 pt-3">
     <h3  class="text-center mb-5">产品特点</h3>
     <div class="bg-light">
         <div class="container py-5">
             <div class="row flex-row-reverse">
-                <div class="col-md-6 mb-3 mb-lg-0 pt-md-5 pt-lg-0">
+                <div class="col-md-6 mb-3 mb-lg-0 pt-md-5 pt-lg-0  wow fadeInRight">
                     <img src="./images/feature/1.jpg" class="w-100"/>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-4  wow fadeInLeft">
                     <h4>高机能护肤·红胶囊水</h4>
                     <p>拍的进的玻尿酸，只需轻轻拍打，细微成分高度渗透，融于皮肤。高浓度玻尿酸深入肌源修护维持肌肤弹润水嫩！</p>
                     <p>
@@ -77,10 +80,10 @@
         </div>
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-6 mb-3  mb-lg-0 pt-md-5 pt-lg-0">
+                <div class="col-md-6 mb-3  mb-lg-0 pt-md-5 pt-lg-0  wow fadeInLeft">
                     <img src="./images/feature/2.jpg" class="w-100"/>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-4 wow fadeInRight">
                     <h4>三重呵护·焕变肌肤</h4>
                     <p>红石榴含有大量的石榴多酚和花青素，可以帮助肌肤排出浊质、修护问题肤，注入丰沛鲜活能量。在伊朗，石榴还被认为是能够精华身体污浊的果实。</p>
                     <p>
@@ -98,10 +101,10 @@
 </section>
 
 <!--星品宝贝-->
-<section class="mt-5">
+<section id="product" class="mt-5 pt-3">
     <h3 class="text-center mb-5">星品宝贝</h3>
     <div class="container">
-        <div class="row">
+        <div class="row wow rotateIn">
             <div class="col-md-3 mb-3">
                 <div class="card">
                     <img class="card-img-top" src="./images/product/1.jpg" alt="Card image cap">
@@ -172,14 +175,14 @@
 </section>
 
 <!--APP下载-->
-<section id="app" class="mt-5">
+<section id="app" class="mt-5 pt-3">
     <h3 class="text-center mb-5">APP下载</h3>
     <div class="container">
-        <div class="row flex-row-reverse">
+        <div class="row flex-row-reverse wow fadeInUpBig">
             <div class="col-md-6">
                 <img src="./images/app.jpg" class="w-100">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-md-5">
                 <h4 class="mt-3 mt-md-0">网战天下移动APP下载</h4>
                 <p>全新微淘升级，有更多好物种草，更快商品更新；全线上线客服直播，让客服面对面为你解答购物问题，好玩、搞笑；购物车优惠明细上线，所有优惠一目了然；发现宝贝新乐趣，商品详情支持宝贝点赞，边看边互动。</p>
                 <p class="text-center text-md-left">
@@ -198,9 +201,116 @@
     </div>
 </section>
 
+<!--公司简介-->
+<section id="intro" class="mt-5 pt-3">
+    <h3 class="text-center mb-3">公司简介</h3>
+    <div class="container position-relative" id="introBox">
+        <div class="row mb-4 timeline_pointer">
+            <div class="col-md-6  pt-5 wow fadeInLeft">
+                <h4>产品研发团队</h4>
+                <p>产品开发不仅包括配方、概念、包装、工艺的开发，还需要经过消费者的验证。各类工作环环相扣，需要参与的项目小组成员分工协作，相互配合，才能保证产品开发流程顺利进行。</p>
+                <p>在配方开发过程中，概念开发也在同步进行。产品概念是对产品外观、功能和特性的描述，是对市场和消费者需求的深刻理解以及追随产业技术发展潮流的共同结果。产品所具有的概念往往由皮肤科学、产品剂型、功效肤感、成分故事4个部分有机组成，可根据品牌的定位和市场推广策略进行选择与侧重。</p>
+            </div>
+            <div class="col-md-6 mb-4 wow fadeInRight">
+                <img src="./images/intro/1.jpg" class="w-100">
+            </div>
+        </div>
+        <div class="row mb-4 flex-row-reverse timeline_pointer">
+            <div class="col-md-6 mb-4 pt-5  wow fadeInRight">
+                <h4>公司发展</h4>
+                <p>Bootstrap是美国Twitter公司的设计师Mark Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。</p>
+                <p>Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+            </div>
+            <div class="col-md-6 wow fadeInLeft">
+                <img src="./images/intro/2.jpg" class="w-100">
+            </div>
+        </div>
+
+        <div class="row mb-4 timeline_pointer">
+            <div class="col-md-6  pt-5  wow fadeInLeft">
+                <h4>产品研发团队</h4>
+                <p>产品开发不仅包括配方、概念、包装、工艺的开发，还需要经过消费者的验证。各类工作环环相扣，需要参与的项目小组成员分工协作，相互配合，才能保证产品开发流程顺利进行。</p>
+                <p>在配方开发过程中，概念开发也在同步进行。产品概念是对产品外观、功能和特性的描述，是对市场和消费者需求的深刻理解以及追随产业技术发展潮流的共同结果。产品所具有的概念往往由皮肤科学、产品剂型、功效肤感、成分故事4个部分有机组成，可根据品牌的定位和市场推广策略进行选择与侧重。</p>
+            </div>
+            <div class="col-md-6 mb-4  wow fadeInRight">
+                <img src="./images/intro/3.jpg" class="w-100">
+            </div>
+        </div>
+        <div class="row mb-4 flex-row-reverse timeline_pointer">
+            <div class="col-md-6 mb-4 pt-5 wow fadeInRight">
+                <h4>公司发展</h4>
+                <p>Bootstrap是美国Twitter公司的设计师Mark Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。</p>
+                <p>Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+            </div>
+            <div class="col-md-6  wow fadeInLeft">
+                <img src="./images/intro/4.jpg" class="w-100">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--联系我们-->
+<section id="contact" class="mt-5">
+    <div class="filter text-white py-5">
+        <div class="container">
+            <div class="row wow bounceInDown">
+                <div class="col-md-6">
+                    <h3 class="mb-3">
+                        <i class="fa fa-paper-plane mr-l"></i>
+                        联系我们
+                    </h3>
+                    <p>中关村科技园，起源于20世纪80年代初的“中关村电子一条街”，是中国第一个国家级高新技术产业开发区、第一个国家自主创新示范区、第一个国家级人才特区，也是京津石高新技术产业带的核心园区。中关村科技园是我国体制机制创新的试验田，被誉为“中国硅谷”。</p>
+                    <p>
+                        <i class="fa fa-home mr-l"></i>
+                        地址：北京市海淀区北四环西路辅路
+                    </p>
+                    <p>
+                        <i class="fa fa-tty mr-1"></i>
+                        联系电话：012-123456789
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope-open mr-1"></i>
+                        邮箱：123456@qq.com
+                    </p>
+                </div>
+                <div class="col-md-6">
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="您的姓名">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="您的邮箱">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="标题">
+                        </div>
+                        <div class="form-group">
+                            <textarea  class="form-control" id="textarea" placeholder="留言内容" row="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="text-center py-2 bg-light">版权所有&copy;WZTX</div>
+</footer>
+
+
 
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
